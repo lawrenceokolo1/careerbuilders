@@ -1,6 +1,6 @@
-# School Website
+Welcome to Career Builders International Schools, Aba
 
-A comprehensive school website built with Streamlit, featuring sections for Creche, Primary School, and Secondary School education.
+We offer quality education from Crèche to Secondary level. With qualified teachers, modern labs, and a secure CCTV-surveilled campus, we nurture future leaders with integrity, knowledge, and confidence.
 
 ## Features
 
