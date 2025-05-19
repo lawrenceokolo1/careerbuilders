@@ -13,7 +13,7 @@ def get_base64_of_bin_file(bin_file):
 # Set page config
 st.set_page_config(
     page_title="Career Builders' International Schools",
-    page_icon="🏫",
+    page_icon="logo.JPG",
     layout="wide"
 )
 
@@ -364,7 +364,7 @@ st.markdown('<div class="school-motto">Excellence in Education, Character, and I
 
 # Sidebar with just logo and contact info
 with st.sidebar:
-    st.image("logo.JPG", caption="Career Builders' Logo", use_column_width=True)
+    st.image("logo.JPG", caption="Career Builders' Logo", use_container_width=True)
     st.markdown("---")
     st.markdown("### Contact Information")
     st.write("📞 Phone: +234 803 763 4201")
