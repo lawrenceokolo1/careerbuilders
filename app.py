@@ -421,7 +421,7 @@ if st.session_state.current_page == "Home":
     st.markdown("### 📄 School Information Flyer")
     flyer_col1, flyer_col2 = st.columns([1, 2])
     with flyer_col1:
-        st.image("downloadable flyer.JPG", caption="School Information Flyer", use_column_width=True)
+        st.image("downloadable flyer.JPG", caption="School Information Flyer", use_container_width=True)
     with flyer_col2:
         st.markdown("""
         Download our comprehensive school information flyer to learn more about:
