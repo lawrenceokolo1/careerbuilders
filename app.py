@@ -357,11 +357,15 @@ st.markdown("""
 if 'current_page' not in st.session_state:
     st.session_state.current_page = "Home"
 
-# Header
-st.title("CAREER BUILDERS INTERNATIONAL SCHOOL")
-st.markdown("### 43/44 UMUOLA ROAD BY BOURDEX AVENUE OGBOR HILL, ABA")
-st.markdown('<div class="school-motto">Excellence in Education, Character, and Innovation</div>', unsafe_allow_html=True)
-
+# Header with logo and school info side by side
+header_col1, header_col2 = st.columns([0.25, 0.75])
+with header_col1:
+    st.image("logo.JPG", width=90)  # Adjust width as needed
+with header_col2:
+    st.title("CAREER BUILDERS INTERNATIONAL SCHOOL")
+    st.markdown("### 43/44 UMUOLA ROAD BY BOURDEX AVENUE OGBOR HILL, ABA")
+    st.markdown('<div class="school-motto">Excellence in Education, Character, and Innovation</div>', unsafe_allow_html=True)
+    st.markdown("---")
 # Sidebar with just logo and contact info
 with st.sidebar:
     st.image("logo.JPG", caption="Career Builders' Logo", use_container_width=True)
@@ -466,14 +470,16 @@ if st.session_state.current_page == "Home":
             "Computer Laboratory",
             "Library",
             "Security System",
-            "Learning Environment"
+            "Learning Environment",
+            "Constant Water Supply"
         ],
         "Description": [
             "State-of-the-art equipment for practical learning",
             "Modern computer facilities for digital education",
             "Well-stocked with up-to-date learning materials",
             "CCTV-enabled for active surveillance",
-            "Conducive environment for learning and co-curricular activities"
+            "Conducive environment for learning and co-curricular activities",
+            "Reliable 24-hour running water throughout the school premises"
         ]
     }
     st.dataframe(pd.DataFrame(features), hide_index=True)
@@ -834,4 +840,4 @@ elif st.session_state.current_page == "Contact":
     # Map placeholder
     st.markdown("### 📍 Location Map")
     st.write("📍 43/44 Umuola Road by Bourdex Avenue, Ogbor Hill, Aba")
-    # Note: You can add an actual map using streamlit's map feature or an iframe 
+    # Note: You can add an actual map using streamlit's map feature or an iframe
